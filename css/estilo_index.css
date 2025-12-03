@@ -16,6 +16,7 @@ body {
     border-bottom: 2px solid #E6D6F5;
     box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     flex-wrap: wrap;
+    
     top: 0;
     position: sticky;
     z-index: 10;
@@ -23,15 +24,12 @@ body {
  
 .encabezado div a img {
     width: 120px;
-    max-width: 100%;
-    height: auto;
+    margin-top: 10px;
 }
  
 .encabezado nav {
     display: flex;
     gap: 15px;
-    flex-wrap: wrap;
-    align-items: center;
 }
  
 .encabezado nav a {
@@ -230,7 +228,7 @@ body {
     margin: 45px 0px;
     padding: 40px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 30px;
     flex-wrap: wrap;
@@ -604,9 +602,23 @@ textarea {
         margin: 0 20px;
         font-size: 16px;
     }
+    .cajaCita {
+        padding: 15px;
+    }
+    .cajaCita img {
+        height: 22rem;
+        margin: 1px 15px;
+    }
+    .textoC h2 {
+        font-size: 22px;
+    }
+    .BotonInfo {
+        font-size: 15px;
+        padding: 7px 12px;
+    }
 }
 
-/* movil inicio - somos */
+/* movil inicio - somos - citas */
 @media (max-width: 790px) {
     .cajaInicio {
         flex-direction: column;
@@ -644,5 +656,37 @@ textarea {
         font-size: 15px;
         line-height: 22px;
     }
-}
+    .cajaCita {
+        text-align: center;
+        padding: 25px 10px;
+        justify-content: center;
 
+    }
+    .cajaCita img {
+        width: 22rem;
+        height: auto;
+        margin: 8px 10px 0;
+    }
+    .textoC p {
+        width: 90%;
+        margin: 0 auto 10px;
+        line-height: 1.3;
+    }
+    .BotonInfo {
+        width: 80%;
+        margin: 22px auto 0;
+        padding: 10px 0;
+    }
+}
+/* tablet citaas */
+@media (max-width: 1200px) and (min-width: 730ox) {
+    .cajaCita {
+        text-align: center;
+        flex-wrap: nowrap;
+    }
+
+    .cajaCita img {
+        height: 22rem;
+        width: auto;
+    }
+}
