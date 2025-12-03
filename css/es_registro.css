@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    font-family: Nunito, Arial, sans-serif;
+    background: #FAF3FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.cajag {
+    width: 85%;
+    height: 75%;
+    max-width: 1000px;
+    background: #ffffff;
+    border-radius: 25px;
+    display: flex;
+    gap: 35px;
+    padding: 45px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.10);
+}
+
+.mitad1 {
+    flex: 1;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.mitad1 div {
+    justify-content: center;
+    display: flex;
+}
+
+.logo img {
+    width: 160px;
+    margin-bottom: 35px;
+}
+
+.BotonVolver{
+    background: none;
+    color: #ec680c;
+    margin-bottom: 5px;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 29px;
+    font-weight: bold;
+}
+
+.BotonVolver:hover {
+    color: #f07b27;
+}
+
+
+.google {
+    width: 93%;
+    padding: 12px;
+    border-radius: 25px;
+    border: 1px solid #d1d1d1;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 28px;
+    background: #fff;
+    font-weight:bold;
+}
+.google:hover {
+    background: #f7f3ff;
+    border-color: #fa9421;
+}
+
+.google img {
+    width: 22px;
+    margin-right: 10px;
+}
+
+.inputs {
+    width: 100%;
+    margin-bottom: 18px;
+}
+
+.inputs input {
+    width: 100%;
+    padding: 13px 17px;
+    border-radius: 25px;
+    border: 1px solid #cfcfcf;
+    font-size: 15px;
+    transition: 0.2s;
+}
+.inputs input:focus {
+    border-color: #fa9421;
+    outline: none;
+    box-shadow: 0 0 6px rgba(252, 169, 16, 0.5);
+}
+
+.BotonRegistro {
+    width: 100%;
+    padding: 13px;
+    background: #ec680c;
+    color: white;
+    font-size: 16px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.2s;
+}
+.BotonRegistro:hover {
+    background: #fa9421;
+}
+
+.BotonInicio {
+    text-align: center;
+    margin-top: 18px;
+    font-size: 14px;
+}
+.BotonInicio a {
+    color: #ec680c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.mitad2 {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mitad2 img {
+    width: 100%;
+    height: auto;
+}

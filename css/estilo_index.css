@@ -1,0 +1,617 @@
+body {
+    margin: 0;
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+    background: #FAF3FF;
+    color: #333;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: #FAF3FF;
+    border-bottom: 2px solid #E6D6F5;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    flex-wrap: wrap;
+    top: 0;
+    position: sticky;
+    z-index: 10;
+}
+ 
+.encabezado div a img {
+    width: 120px;
+    max-width: 100%;
+    height: auto;
+}
+ 
+.encabezado nav {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+ 
+.encabezado nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 17px;
+}
+ 
+#hamburguesa {
+    display: none;
+    font-size: 32px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #61378d;
+}
+ 
+.encabezado nav a:hover {
+    color: #61378d;
+    font-weight: 700;
+    transform: translateY(-3px);
+}
+ 
+.Boton_Menu {
+    display: none;
+}
+ 
+@media(max-width: 1000px) {
+    #hamburguesa {
+        display: block;
+    }
+    .encabezado nav {
+        display: none;
+        flex-direction: column;
+        background: #FAF3FF;
+        width: 100%;
+        padding: 20px 0;
+        border-top: 2px solid #E6D6F5;
+        margin-top: 15px;
+    }
+    .encabezado nav a {
+        font-size: 20px;
+        text-align: center;
+        width: 100%;
+        transition: transform 0.3s ease;
+    }
+    .encabezado nav.activo {
+        display: flex;
+    }
+    .BotonIR {
+        display: none;
+    }
+    .Boton_Menu {
+        display: block;
+        width: 150px !important;
+        padding: 5px 10px;
+        background: #61378d;
+        border: none;
+        border-radius: 12px;
+        text-decoration: none;
+        color: white !important;
+        font-size: 17px;
+        cursor: pointer;
+    }
+}
+ 
+.BotonIR {
+    padding: 8px 14px;
+    background: #61378d;
+    border: none;
+    border-radius: 12px;
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+}
+ 
+.BotonIR:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+ 
+/* I */
+.cajaInicio {
+    background: #61378d;
+    color: white;
+    height: 30rem;
+    margin: 40px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+}
+ 
+.cajaInicio img {
+    height: 100%;
+    width: auto;
+    margin: 0;
+}
+ 
+.cajaInicio h1 {
+    margin-bottom: 1.5rem;
+    font-size: 65px;
+    margin: 40px;
+}
+ 
+.cajaInicio h2 {
+    margin-bottom: 1.5rem;
+    font-size: 40px;
+    font-weight: 300;
+    margin: 40px;
+}
+ 
+.cajaInicio p {
+    margin: 40px;
+}
+
+
+
+/* QS */
+.cajaSomos {
+    background: #FAF3FF;
+    margin: 50px 0 60px;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+ 
+.cajaSomos img {
+    height: 30rem;
+    width: auto;
+    margin-left: 60px;
+}
+ 
+.textoA {
+    margin: 30px 50px;
+    width: 450px;
+    font-size: 19px;
+}
+ 
+.BotonInfo {
+    padding: 8px 14px;
+    background: #61378d;
+    border: none;
+    border-radius: 12px;
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+}
+ 
+.BotonInfo:hover {
+    background-color: #61378d;
+    box-shadow: 0 4px 12px rgba(255, 80, 220, 0.3);
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+ 
+/*  */
+.Titulo {
+    margin: 40px 25px 5px;
+    font-size: 35px;
+    font-weight: bold;
+}
+ 
+/* S */
+.servicio {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    margin: 40px 22px;
+}
+ 
+.serv1 {
+    width: 300px;
+    text-align: center;
+}
+ 
+.tarjetaA {
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+}
+ 
+.serv1 p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+ 
+/* C */
+.cajaCita {
+    background: #ec680c;
+    color: white;
+    margin: 45px 0px;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+ 
+.cajaCita img {
+    height: 30rem;
+    width: auto;
+    margin-right: 100px;
+}
+ 
+.cajaCita div {
+    width: 450px;
+    font-size: 18px;
+    margin: 30px;
+}
+ 
+.cajaCita h2 {
+    margin-bottom: 1rem;
+    font-size: 35px;
+}
+ 
+/* T */
+.tip {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    margin: 40px 29px;
+}
+ 
+.tip1 {
+    width: 380px;
+    text-align: center;
+}
+ 
+.tipImg {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+ 
+.tip1, .serv1 {
+    width: 100%;
+}
+
+.tip {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, auto);
+    gap: 10px;
+}
+ 
+@media (max-width: 1000px) {
+    .tip {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+    }
+}
+ 
+@media (max-width: 650px) {
+    .tip {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, auto);
+    }
+}
+ 
+.servicio {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto;
+    gap: 10px;
+}
+ 
+@media (max-width: 1024px) {
+    .servicio {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+    }
+}
+ 
+@media (max-width: 600px) {
+    .servicio {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+    }
+}
+ 
+.tipImg, .tarjetaA {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+ 
+.tipImg:hover, .tarjetaA:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+ 
+@media (max-width: 1024px) {
+    .tipImg, .tarjetaA {
+        height: 220px;
+    }
+}
+ 
+@media (max-width: 600px) {
+    .tipImg, .tarjetaA {
+        height: auto;
+    }
+}
+ 
+.tip1 p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+ 
+/* Cons */
+.consultas {
+    padding: 40px 60px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+ 
+.consultas h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+ 
+.formulario {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+ 
+.g, .g2 {
+    display: flex;
+    flex-direction: column;
+}
+ 
+.g2 {
+    grid-column: 1 / 3;
+}
+ 
+input, textarea {
+    padding: 8px 12px;
+    border-radius: 18px;
+    border: 1px solid #a88ddd;
+    background: #faf4ff;
+    font-size: 16px;
+}
+ 
+textarea {
+    height: 80px;
+    resize: none;
+}
+ 
+.mensaje {
+    color: red;
+    font-size: 13px;
+    margin-top: 4px;
+    height: 16px;
+}
+ 
+/* Botón */
+.BotonInfo1 {
+    padding: 10px 16px;
+    background: #7b43c5;
+    border: none;
+    border-radius: 16px;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+ 
+.BotonInfo1:hover {
+    background: #6a38ad;
+    transform: scale(1.05);
+    transition: 0.3s ease;
+}
+ 
+@media (max-width: 1150px) {
+    .consultas {
+        grid-template-columns: 1fr;
+    }
+ 
+    .part1 {
+        text-align: center;
+    }
+ 
+    .part1 img {
+        height: 19rem;
+    }
+ 
+    .part2 {
+        margin: 20px;
+    }
+ 
+    .formulario {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto auto auto;
+    }
+ 
+    #campo1, #campo2, #campo3, #campo4, #campo5 {
+        grid-column: 1/2;
+        width: 96%;
+    }
+}
+/* PF */
+.fin img {
+    width: 100%;
+    height: auto;
+    margin-bottom: -9px;
+}
+ 
+/* F */
+.pie {
+    background: #61378d;
+    padding: 25px 30px 15px;
+    color: white;
+}
+ 
+.pie_texto {
+    display: grid;
+    gap: 50px;
+    font-size: 20px;
+    grid-template-columns: 1fr 1fr;
+}
+ 
+#imagenLogo2 {
+    width: 165px;
+}
+ 
+.parte1 ul {
+    margin: 55px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+ 
+.pie_lista {
+    list-style: none;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+ 
+.pie_lista a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+ 
+.pie_lista a:hover {
+    font-weight: 600;
+}
+ 
+.final {
+    text-align: center;
+    font-size: 16px;
+    margin: 15px 15px -10px;
+    border-top: 1px solid rgb(127, 126, 126);
+}
+ 
+.footer {
+    background-color: #61378d;
+    color: white;
+    padding: 30px 50px;
+}
+ 
+.par {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+}
+ 
+.logo_M img {
+    width: 120px;
+    height: auto;
+}
+ 
+.par1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px;
+}
+ 
+.par1 a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+ 
+.par1 a:hover {
+    font-weight: 600;
+}
+ 
+.par2 a {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+ 
+.grupo {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 5px;
+   
+}
+ 
+.mensaje {
+    color: red;
+    font-size: 13px;
+    height: auto;
+    margin-top: 2px;
+    line-height: 1.2;
+}
+ 
+@media (max-width: 1100px) and (min-width: 655px) {
+
+    .cajaInicio {
+        height: 18rem;
+        padding: 0;
+    }
+        .cajaInicio div {
+        margin: 1px;
+    }
+    .cajaInicio h1 {
+        margin: 0 25px 6px;
+        line-height: 1.2;
+        font-size: 55px;
+    }
+
+    .cajaInicio h2 {
+        margin: 0 25px 8px;
+        line-height: 35px;
+        font-size: 30px;
+    }
+
+    .cajaInicio p {
+        font-size: 16.5px;
+        margin: 0 25px 8px;
+        line-height: 1.3;
+    }
+
+    .cajaInicio img {
+        height: 18rem;
+        width: 80%;
+    }
+}
+
+@media (max-width: 790px) {
+    .cajaInicio {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 25px 0 0px;
+        margin: 20px;
+        gap: 10px;
+    }
+
+    .cajaInicio h2 {
+        font-size: 26px;
+        margin: 10px 0;
+    }
+
+    .cajaInicio p {
+        font-size: 16px;
+        margin: 10px 15px 0;
+    }
+
+    .cajaInicio img {
+        width: 100%;
+        height: auto;
+    }
+}
